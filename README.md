@@ -17,13 +17,11 @@ public class WhoWantsToBeAMillionaireApp {
         Scanner scanner = new Scanner (System.in);
         System.out.println("Please give your answer: ");
 
-
-        int answer = scanner.nextLine();
+        String answer = scanner.nextLine();
 
 scanner.close();
-        if (answer != "a") {
-            System.out.println("Looser");
-        } else {
+        if (answer == "a") {
             System.out.println("Winner");
+        } else {
+            System.out.println("Looser");
         }
-
